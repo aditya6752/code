@@ -1,0 +1,15 @@
+bool p(){
+    
+}
+
+while(lo<hi){
+    //FFFFFFFTTTTTTT
+    ll mid = lo + (hi - lo) /2;
+    if(p(mid)) hi = mid;
+    else lo = mid + 1;
+
+    //TTTTTTTFFFFFF
+    ll mid = lo + (hi - lo + 1)/2;
+    if(p(mid)) lo = mid;
+    else hi = mid - 1;
+}

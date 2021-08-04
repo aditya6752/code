@@ -1,0 +1,8 @@
+int centroid(int node, int par)
+{
+    for (int child : ar[node])
+        if (child != par && sub[child] > n / 2)
+            return centroid(child, node);
+
+    return node;
+}

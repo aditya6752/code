@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+vector<int> adj[10000];
+bool visited[10000];
+
+bool find_path(int cur,int destination){
+    if(cur==destination){
+        return true;
+    }
+    visited[cur]=true;
+    bool found = false;
+    for(int adjacent_vertex:adj[cur]){
+        if(visited[adjacent_vertex]){
+            continue;
+        }
+        if(find_path(adjacent_vertex,destination)){
+            found = true;
+        }
+    }
+    return found;
+}
