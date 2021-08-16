@@ -1,6 +1,3 @@
-//in case of protected
-//the data members are
-//accessible in subclass as well
 #include <bits/stdc++.h>
 using namespace std;
 class person
@@ -32,15 +29,11 @@ int main()
     person anil;
     anil.setName("aditya");
     anil.display();
-
+//anil.name is not allowed
+//anil.setname is allowed, as anil.name is in the main function
+//which is outside the function, in which it is defined, also
+//the main function is not the derived function, of it
     student aditya;
     aditya.setName("preeting");
     aditya.display();
 }
-
-//now here it is evidable that
-//name can be accessed in the studnt 
-// as in person it is referred as 
-//protected
-//so it can be accessed in
-//the subclass.

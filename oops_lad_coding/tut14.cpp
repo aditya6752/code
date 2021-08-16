@@ -1,3 +1,7 @@
+//inheritance covered in this 
+//slide
+
+
 #include <bits/stdc++.h>
 using namespace std;
 
